@@ -4,16 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "build": "tsc",
+    "watch": "tsc -watch",
+    "start": "http-server -o"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "ts-node": "^10.9.1",
+  "devDependencies": {
     "typescript": "^5.1.3"
   },
-  "devDependencies": {
-    "@types/node": "^20.2.5"
+  "dependencies": {
+    "@types/node": "^20.2.5",
+    "http-server": "^14.1.1"
   }
 }
